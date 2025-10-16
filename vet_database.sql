@@ -57,7 +57,7 @@ CREATE TABLE Prescription (
   instruction varchar(500) 
 ); 
 
--- ChatGPT was used to generate mock data for each column 
+-- ChatGPT was used to generate mock data for each column including information of owners, pets, vets, etc. 
 
 -- owner table
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (1, 'Antonio', 'Rocha', '+351 99 350 328', 'antonio.rocha87@proton.me', 'Avenida do Porto, 23, Lisbon');
@@ -77,8 +77,8 @@ INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_a
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (15, 'Nuno', 'Amaral', '+351 96 830 419', 'nuno_amaral84@outlook.com', 'Rua do Monte, 231, Porto');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (16, 'Ines', 'Pinto', '+351 91 702 667', 'ines.pinto@gmail.com', 'Rua do Carmo, 182, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (17, 'Noah', 'Ferreira', '+351 22 626 343', 'noah_ferreira28@mail.com', 'Travessa do Sol, 186 Apt 19, Leiria');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (18, 'Francisco', 'Melo', '+351 97 294 196', 'francisco.melo46@yahoo.com', 'Praça da República, 120 Apt 2, Porto');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (19, 'Mariana', 'Castro', '+351 92 354 296', 'mariana.castro@hotmail.com', 'Praça da República, 47, Coimbra');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (18, 'Francisco', 'Melo', '+351 97 294 196', 'francisco.melo46@yahoo.com', 'PraÃ§a da RepÃºblica, 120 Apt 2, Porto');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (19, 'Mariana', 'Castro', '+351 92 354 296', 'mariana.castro@hotmail.com', 'PraÃ§a da RepÃºblica, 47, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (20, 'Noah', 'Fonseca', '+351 29 200 151', 'noahfonseca2@gmail.com', 'Rua das Acacias, 43, Viana do Castelo');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (21, 'Ana', 'Castro', '+351 23 488 102', 'ana_castro@yahoo.com', 'Estrada de Benfica, 109, Viseu');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (22, 'Joaquim', 'Nogueira', '+351 96 403 322', 'joaquim.nogueira@mail.com', 'Avenida da Liberdade, 192, Lisbon');
@@ -89,42 +89,42 @@ INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_a
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (27, 'Helena', 'Lopes', '+351 94 820 409', 'helenalopes84@mail.com', 'Rua das Flores, 171 Apt 10, Porto');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (28, 'Hugo', 'Barbosa', '+351 92 860 666', 'hugo.barbosa@mail.com', 'Rua da Alegria, 184, Faro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (29, 'Pedro', 'Marques', '+351 91 194 749', 'pedro_marques6@gmail.com', 'Rua da Estrela, 198, Faro');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (30, 'Marco', 'Sá', '+351 97 674 109', 'marco.sá@proton.me', 'Travessa do Sol, 140, Setubal');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (30, 'Marco', 'SÃ¡', '+351 97 674 109', 'marco.sÃ¡@proton.me', 'Travessa do Sol, 140, Setubal');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (31, 'Eva', 'Santos', '+351 93 142 415', 'eva_santos6@outlook.com', 'Rua da Alegria, 175, Porto');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (32, 'Samuel', 'Reis', '+351 97 735 867', 'samuel.reis31@hotmail.com', 'Avenida dos Aliados, 226, Braga');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (33, 'Filipa', 'Cardoso', '+351 97 921 785', 'filipacardoso35@hotmail.com', 'Largo da Igreja, 98 Apt 16, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (34, 'Tiago', 'Henriques', '+351 96 328 124', 'tiagohenriques@outlook.com', 'Rua do Mercado, 222, Faro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (35, 'Samuel', 'Cabral', '+351 94 439 128', 'samuel.cabral34@hotmail.com', 'Rua da Beleza, 247 Apt 2, Porto');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (36, 'Goncalo', 'Matos', '+351 98 546 720', 'goncalomatos@mail.com', 'Rua da Alegria, 66, Aveiro');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (37, 'Lucas', 'Cruz', '+351 29 803 836', 'lucascruz26@outlook.com', 'Praça da República, 18 Apt 11, Leiria');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (37, 'Lucas', 'Cruz', '+351 29 803 836', 'lucascruz26@outlook.com', 'PraÃ§a da RepÃºblica, 18 Apt 11, Leiria');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (38, 'Daniel', 'Faria', '+351 25 619 416', 'danielfaria@yahoo.com', 'Estrada de Benfica, 142, Aveiro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (39, 'Joaquim', 'Ramos', '+351 93 730 682', 'joaquim_ramos@gmail.com', 'Estrada de Benfica, 74, Leiria');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (40, 'Goncalo', 'Cabral', '+351 95 552 791', 'goncalo.cabral@proton.me', 'Avenida dos Aliados, 169, Viseu');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (41, 'Joaquim', 'Vaz', '+351 92 938 869', 'joaquim.vaz29@hotmail.com', 'Travessa do Sol, 7, Viana do Castelo');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (42, 'Rita', 'Reis', '+351 97 744 689', 'rita.reis50@yahoo.com', 'Rua do Rosário, 63, Lisbon');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (42, 'Rita', 'Reis', '+351 97 744 689', 'rita.reis50@yahoo.com', 'Rua do RosÃ¡rio, 63, Lisbon');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (43, 'Sebastian', 'Reis', '+351 27 324 280', 'sebastianreis@gmail.com', 'Avenida do Porto, 64 Apt 4, Viana do Castelo');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (44, 'Hugo', 'Henriques', '+351 94 709 424', 'hugo_henriques93@mail.com', 'Praça da República, 213 Apt 15, Braga');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (44, 'Hugo', 'Henriques', '+351 94 709 424', 'hugo_henriques93@mail.com', 'PraÃ§a da RepÃºblica, 213 Apt 15, Braga');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (45, 'Filipa', 'Neves', '+351 96 960 752', 'filipa_neves67@yahoo.com', 'Rua das Acacias, 71, Faro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (46, 'Ines', 'Correia', '+351 94 182 241', 'ines.correia@proton.me', 'Travessa do Sol, 181, Aveiro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (47, 'David', 'Cardoso', '+351 97 163 311', 'david_cardoso@mail.com', 'Rua das Flores, 220 Apt 19, Aveiro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (48, 'Francisco', 'Silva', '+351 25 871 499', 'francisco_silva@proton.me', 'Avenida do Porto, 205, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (49, 'Carolina', 'Pinto', '+351 95 129 498', 'carolina_pinto52@proton.me', 'Avenida dos Aliados, 216, Braga');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (50, 'Rita', 'Varela', '+351 97 706 677', 'ritavarela@proton.me', 'Praça da República, 35 Apt 6, Lisbon');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (50, 'Rita', 'Varela', '+351 97 706 677', 'ritavarela@proton.me', 'PraÃ§a da RepÃºblica, 35 Apt 6, Lisbon');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (51, 'Miguel', 'Ramos', '+351 95 434 445', 'miguel_ramos@yahoo.com', 'Rua do Mercado, 214, Lisbon');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (52, 'Filipa', 'Varela', '+351 98 329 765', 'filipa.varela84@gmail.com', 'Rua das Flores, 244, Lisbon');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (53, 'Rita', 'Ribeiro', '+351 95 785 217', 'ritaribeiro60@proton.me', 'Rua do Mercado, 197, Leiria');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (54, 'Goncalo', 'Sá', '+351 93 418 210', 'goncalosá@outlook.com', 'Rua da Beleza, 174 Apt 13, Aveiro');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (54, 'Goncalo', 'SÃ¡', '+351 93 418 210', 'goncalosÃ¡@outlook.com', 'Rua da Beleza, 174 Apt 13, Aveiro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (55, 'Margarida', 'Carvalho', '+351 96 204 813', 'margarida_carvalho77@gmail.com', 'Rua da Beleza, 201, Viseu');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (56, 'Sara', 'Faria', '+351 94 763 449', 'sara.faria63@gmail.com', 'Praça da República, 246, Viana do Castelo');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (56, 'Sara', 'Faria', '+351 94 763 449', 'sara.faria63@gmail.com', 'PraÃ§a da RepÃºblica, 246, Viana do Castelo');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (57, 'Margarida', 'Ribeiro', '+351 94 766 376', 'margaridaribeiro69@yahoo.com', 'Rua do Monte, 112 Apt 19, Faro');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (58, 'Daniel', 'Melo', '+351 22 385 561', 'daniel.melo73@mail.com', 'Rua do Rosário, 87, Setubal');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (58, 'Daniel', 'Melo', '+351 22 385 561', 'daniel.melo73@mail.com', 'Rua do RosÃ¡rio, 87, Setubal');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (59, 'Lara', 'Marques', '+351 99 448 386', 'laramarques36@mail.com', 'Rua das Flores, 133 Apt 3, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (60, 'Andre', 'Azevedo', '+351 96 807 587', 'andreazevedo58@gmail.com', 'Rua do Carmo, 76, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (61, 'Clara', 'Faria', '+351 95 666 643', 'clara_faria@proton.me', 'Avenida do Porto, 85, Viana do Castelo');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (62, 'Victoria', 'Teixeira', '+351 92 838 297', 'victoria_teixeira@mail.com', 'Avenida dos Aliados, 50, Viana do Castelo');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (63, 'Victoria', 'Macedo', '+351 94 711 389', 'victoria.macedo38@hotmail.com', 'Avenida do Brasil, 46, Viseu');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (64, 'Hugo', 'Correia', '+351 91 666 399', 'hugocorreia82@yahoo.com', 'Largo da Igreja, 224, Faro');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (65, 'Francisco', 'Neves', '+351 93 152 358', 'francisco_neves@gmail.com', 'Rua do Rosário, 126, Lisbon');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (65, 'Francisco', 'Neves', '+351 93 152 358', 'francisco_neves@gmail.com', 'Rua do RosÃ¡rio, 126, Lisbon');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (66, 'Beatrice', 'Ribeiro', '+351 25 187 354', 'beatrice.ribeiro@yahoo.com', 'Rua do Arco, 153 Apt 8, Viseu');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (67, 'Leonardo', 'Fonseca', '+351 25 980 702', 'leonardo_fonseca@mail.com', 'Avenida da Liberdade, 157 Apt 4, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (68, 'Antonio', 'Moreira', '+351 92 260 345', 'antonio.moreira@hotmail.com', 'Rua das Flores, 105, Leiria');
@@ -137,7 +137,7 @@ INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_a
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (75, 'Sebastian', 'Santos', '+351 92 422 358', 'sebastian_santos@yahoo.com', 'Rua da Marinha, 212 Apt 18, Viana do Castelo');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (76, 'David', 'Costa', '+351 98 737 874', 'david_costa98@gmail.com', 'Rua da Alegria, 69, Faro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (77, 'Arthur', 'Figueiredo', '+351 91 745 723', 'arthur.figueiredo40@mail.com', 'Rua das Flores, 142, Coimbra');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (78, 'Camila', 'Henriques', '+351 23 610 833', 'camila_henriques@outlook.com', 'Praça da República, 214, Viana do Castelo');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (78, 'Camila', 'Henriques', '+351 23 610 833', 'camila_henriques@outlook.com', 'PraÃ§a da RepÃºblica, 214, Viana do Castelo');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (79, 'Ines', 'Henriques', '+351 97 295 713', 'ineshenriques18@gmail.com', 'Rua do Mercado, 198 Apt 14, Setubal');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (80, 'Pedro', 'Correia', '+351 25 843 405', 'pedrocorreia@proton.me', 'Rua de Santa Catarina, 222, Viseu');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (81, 'Francisco', 'Dias', '+351 94 486 566', 'francisco_dias90@hotmail.com', 'Rua da Beleza, 99, Aveiro');
@@ -151,11 +151,11 @@ INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_a
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (89, 'Vasco', 'Barbosa', '+351 99 303 493', 'vasco_barbosa@yahoo.com', 'Rua da Beleza, 92, Faro');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (90, 'Mateo', 'Faria', '+351 91 679 985', 'mateofaria7@mail.com', 'Rua de Santa Catarina, 214 Apt 10, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (91, 'Goncalo', 'Dias', '+351 96 735 356', 'goncalodias99@proton.me', 'Travessa do Sol, 161, Lisbon');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (92, 'Clara', 'Fonseca', '+351 98 849 234', 'clara.fonseca42@proton.me', 'Praça da República, 45, Viseu');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (92, 'Clara', 'Fonseca', '+351 98 849 234', 'clara.fonseca42@proton.me', 'PraÃ§a da RepÃºblica, 45, Viseu');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (93, 'Helena', 'Cruz', '+351 99 950 268', 'helena_cruz62@outlook.com', 'Rua da Estrela, 206, Porto');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (94, 'Beatrice', 'Amaral', '+351 27 966 923', 'beatriceamaral@yahoo.com', 'Rua das Flores, 68, Viana do Castelo');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (95, 'Helena', 'Esteves', '+351 99 698 490', 'helenaesteves14@proton.me', 'Rua das Acacias, 121, Viseu');
-INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (96, 'Daniel', 'Tavares', '+351 92 750 943', 'daniel_tavares39@proton.me', 'Praça da República, 30, Lisbon');
+INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (96, 'Daniel', 'Tavares', '+351 92 750 943', 'daniel_tavares39@proton.me', 'PraÃ§a da RepÃºblica, 30, Lisbon');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (97, 'Clara', 'Marques', '+351 96 650 238', 'clara_marques@proton.me', 'Avenida do Porto, 108, Braga');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (98, 'David', 'Cabral', '+351 95 730 517', 'david_cabral@outlook.com', 'Rua da Alegria, 114, Coimbra');
 INSERT INTO Owners (owner_id, first_name, last_name, phone_number, email, home_address) VALUES (99, 'Helena', 'Martins', '+351 26 657 760', 'helena_martins@outlook.com', 'Rua da Alegria, 248, Viana do Castelo');
@@ -355,7 +355,7 @@ INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_
 INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_date) VALUES (88, 'Goncalo', 'Esteves', 'Oncology', '+351 98 807 343', '2020-06-02');
 INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_date) VALUES (89, 'Filipa', 'Neves', 'Dentistry', '+351 21 445 937', '2022-07-30');
 INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_date) VALUES (90, 'Clara', 'Correia', 'Emergency Medicine', '+351 22 989 333', '2021-02-21');
-INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_date) VALUES (91, 'Clara', 'Sá', 'Emergency Medicine', '+351 98 375 846', '2023-07-18');
+INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_date) VALUES (91, 'Clara', 'SÃ¡', 'Emergency Medicine', '+351 98 375 846', '2023-07-18');
 INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_date) VALUES (92, 'Goncalo', 'Cabral', 'Dermatology', '+351 96 943 516', '2024-02-14');
 INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_date) VALUES (93, 'Sebastian', 'Cruz', 'Ophthalmology', '+351 29 910 262', '2020-07-22');
 INSERT INTO Vets (vet_id, first_name, last_name, speciality, phone_number, hire_date) VALUES (94, 'Clara', 'Nogueira', 'Internal Medicine', '+351 94 682 129', '2021-06-23');
@@ -670,4 +670,5 @@ INSERT INTO Prescription (prescription_id, record_id, item_name, quantity, unit_
 INSERT INTO Prescription (prescription_id, record_id, item_name, quantity, unit_price, instruction) VALUES (97, 97, 'Ivermectin', 31, 23.50, 'Use until finished');
 INSERT INTO Prescription (prescription_id, record_id, item_name, quantity, unit_price, instruction) VALUES (98, 98, 'Ivermectin', 31, 32.32, 'Use as needed for pain');
 INSERT INTO Prescription (prescription_id, record_id, item_name, quantity, unit_price, instruction) VALUES (99, 99, 'Doxycycline 100mg', 23, 93.47, 'Administer for 14 days');
+
 INSERT INTO Prescription (prescription_id, record_id, item_name, quantity, unit_price, instruction) VALUES (100, 100, 'Furosemide 20mg', 55, 104.00, 'Apply topically twice daily');
