@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vet Clinic Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Vet Clinic</h2>
+            </div>
+            <ul class="nav-list">
+                <li><button class="nav-button" onclick="loadSection('owners')">Owners</button></li>
+                <li><button class="nav-button" onclick="loadSection('pets')">Pets</button></li>
+                <li><button class="nav-button" onclick="loadSection('vets')">Vets</button></li>
+                <li><button class="nav-button" onclick="loadSection('appointments')">Appointments</button></li>
+                <li><button class="nav-button" onclick="loadSection('prescription')">Prescription</button></li>
+                <li><button class="nav-button" onclick="loadSection('medical-records')">Medical Records</button></li>
+            </ul>
+        </nav>
+ 
+
+         <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1 id="head-title">Vet Clinic Management System</h1>
+            </header>
+
+            <main>
+                <section id="content">
+                    <p>Loading data...</p>
+                </section>
+
+            <!-- Add Appointment Form -->
+                <section id="appointmentForm" class="form-section hidden">
+                  <h2>Add New Appointment</h2>
+                  <form class = "form-design" onsubmit="submitAppointment(event)">
+                    <label>Pet ID:</label>
+                    <input type="number" id="petId" required />
+
+                    <label>Vet ID:</label>
+                    <input type="number" id="vetId" required />
+
+                    <label>Date:</label>
+                    <input type="datetime-local" id="appointmentDate" required />
+
+                    <label>Reason:</label>
+                    <input type="text" id="reason" required />
+
+                    <button type="submit">Add Appointment</button>
+                  </form>
+                </section>
+
+
+            <!-- Add Prescription Form -->
+                <section id="prescriptionForm" class="form-section hidden">
+                  <h2>Add New Prescription</h2>
+                  <form onsubmit="submitPrescription(event)">
+                    <label>Medical Record ID:</label>
+                    <input type="number" id="recordId" required />
+
+                    <label>Medication:</label>
+                    <input type="text" id="medication" required />
+
+                    <label>Quantity:</label>
+                    <input type="text" id="quantity" required />
+
+                    <label>Unit Price:</label>
+                    <input type="text" id="unitPrice" required />
+
+                    <label>Instructions:</label>
+                    <input type="text" id="instruction" required />
+
+                    <button type="submit">Add Prescription</button>
+                  </form>
+                </section>
+            </main>
+
+
+            <footer>
+                <p>© 2025 Vet Clinic System</p>
+            </footer>
+        </div>
+  </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

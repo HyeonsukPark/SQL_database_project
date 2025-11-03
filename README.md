@@ -5,6 +5,7 @@
 This project simulates the data management and analysis of a veterinary clinic using SQL. It includes two main parts:
 * **Database Creation**: Building a fully relational vet clinic database using CREATE TABLE and INSERT INTO SQL statements, with realistic mock data generated through ChatGPT.
 * **Data Analysis**: Running SQL queries to extract business insights from the dataset — helping to understand operations, client behavior, and financial performance.
+* **VetClinic Management System Flask Web app**: Building a Flask, MS SQL Server, and Docker-based web application to display database. 
 
 The goal of this project is to demonstrate proficiency in database design, data population, and SQL-based data analysis
 
@@ -67,9 +68,33 @@ After creating and populating the database, multiple SQL queries were executed t
 | 11 | What is the **total monthly revenue** of the clinic?               | `GROUP BY YEAR, MONTH`           |
 | 12 | What is the **total prescription cost per visit**?                 | `SUM(quantity * unit_price)`     |
 
-## Tools 
+## Tools / Tech Stack 
 * MS SQL Server
 * SQL Server Management Studio
 * ChatGPT (for mock data generation)
+* Flask (Python)
+* Docker
+* HTML, CSS, Javascript 
 
-  
+## VetClinic Management System Flask Web app  
+
+I developed a Flask-based web application designed for a Virtual Veterinary Clinic, showcasing database-driven functionality for managing pet owners, pets, vets, appointments, prescriptions, and medical records.
+
+The system is powered by Microsoft SQL Server for data storage and is fully containerized using Docker, ensuring consistent deployment across environments. The frontend uses HTML, CSS, and JavaScript to provide a clean, user-friendly interface for viewing and interacting with the clinic’s data.
+
+* Built with Flask (Python) as the web framework
+
+* Connected to a Microsoft SQL Server database (Vet_Database)
+
+* Integrated six core tables
+
+* Designed an interactive, data-driven interface using HTML, CSS, and JavaScript
+
+* Demonstrates full-stack development, database connectivity, and containerized deployment 
+
+**Limit** : This web application is a basic prototype of the full system. It still requires further development to add advanced
+features.  
+
+**Web Image** 
+
+![alt text](image.png)
